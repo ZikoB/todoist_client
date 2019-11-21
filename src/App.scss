@@ -39,7 +39,7 @@ $generic-border: 1px solid #f1f1f1;
 $generic-bg: #db4c3f;
 
 /* Mixins
-		 ============================================ */
+  ============================================ */
 @mixin box-overlay() {
 	-webkit-box-shadow: $generic-box-shadow;
 	box-shadow: $generic-box-shadow;
@@ -136,7 +136,7 @@ $generic-bg: #db4c3f;
 }
 
 /* Darkmode
-		 ============================================ */
+  ============================================ */
 .darkmode {
 	header {
 		-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
@@ -147,7 +147,7 @@ $generic-bg: #db4c3f;
 }
 
 /* Header
-		 ============================================ */
+  ============================================ */
 header {
 	border-bottom: solid 1px #ca2100;
 	background-color: $generic-bg;
@@ -250,7 +250,7 @@ header {
 }
 
 /* Sidebar
-		 ============================================ */
+  ============================================ */
 .sidebar {
 	@include no-select();
 	width: 266px;
@@ -421,7 +421,7 @@ header {
 }
 
 /* Show Confirm Delete
-		 ============================================ */
+  ============================================ */
 .project-delete-modal {
 	position: relative;
 
@@ -453,7 +453,7 @@ header {
 }
 
 /* Main Content
-		 ============================================ */
+  ============================================ */
 .content {
 	display: grid;
 	-webkit-box-align: center;
@@ -465,7 +465,7 @@ header {
 }
 
 /* Tasks
-		 ============================================ */
+  ============================================ */
 .tasks {
 	width: 656px;
 	background-color: white;
@@ -473,10 +473,7 @@ header {
 	border-right: $generic-border;
 	min-height: calc(100vh);
 	vertical-align: top;
-	padding-left: 40px;
-	padding-right: 40px;
-	padding-top: 80px;
-	padding-bottom: 84px;
+	padding: 80px 40px 84px;
 
 	@include mq('900px') {
 		margin-left: 0;
@@ -533,7 +530,7 @@ header {
 }
 
 /* Add Task
-		 ============================================ */
+  ============================================ */
 .add-task {
 	&__overlay {
 		background: rgba(102, 102, 102, 0.5);
@@ -644,7 +641,7 @@ header {
 }
 
 /* Task Date
-		 ============================================ */
+  ============================================ */
 .task-date {
 	@include box-overlay();
 	background-color: #fff;
@@ -677,7 +674,7 @@ header {
 }
 
 /* Project Overlay
-		 ============================================ */
+  ============================================ */
 .project-overlay {
 	@include box-overlay();
 	background-color: white;
@@ -699,7 +696,7 @@ header {
 }
 
 /* Add Project
-		 ============================================ */
+  ============================================ */
 .add-project {
 	padding-left: 13px;
 	padding-right: 20px;

@@ -1,31 +1,42 @@
 {
-  "env": {
-    "browser": true,
-    "es6": true
-  },
-  "extends": ["eslint:recommended", "prettier", "prettier/react"],
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 2018,
-    "sourceType": "module"
-  },
-  "plugins": ["react", "prettier"],
-  "rules": {
-    "no-unused-vars": 0,
-    "prettier/prettier": [
-      "error",
-      {
-        "semi": true,
-        "singleQuote": true,
-        "trailingComma": "es5",
-        "printWidth": 70
-      }
-    ]
-  }
+	"env": {
+		"browser": true,
+		"es6": true,
+		"jest/globals": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"prettier",
+		"prettier/react",
+		"plugin:jsx-a11y/recommended"
+	],
+	"globals": {
+		"Atomics": "readonly",
+		"SharedArrayBuffer": "readonly"
+	},
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 2018,
+		"sourceType": "module"
+	},
+	"plugins": ["react", "prettier", "jsx-a11y", "jest"],
+	"rules": {
+		"jest/no-disabled-tests": "warn",
+		"jest/no-focused-tests": "error",
+		"jest/no-identical-title": "error",
+		"jest/prefer-to-have-length": "warn",
+		"jest/valid-expect": "error",
+		"no-unused-vars": 0,
+		"prettier/prettier": [
+			"error",
+			{
+				"semi": true,
+				"singleQuote": true,
+				"trailingComma": "es5",
+				"printWidth": 70
+			}
+		]
+	}
 }
